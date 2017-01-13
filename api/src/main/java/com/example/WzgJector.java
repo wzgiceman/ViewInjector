@@ -7,7 +7,7 @@ public class WzgJector {
 
     public static void bind(Object host, Object root) {
         Class<?> clazz = host.getClass();
-        String proxyClassFullName = clazz.getName() + "$$ViewInjector";
+        String proxyClassFullName = clazz.getName() + "ViewInjector";
         try {
             Class<?> proxyClazz = Class.forName(proxyClassFullName);
             ViewInjector viewInjector = (ViewInjector) proxyClazz.newInstance();
