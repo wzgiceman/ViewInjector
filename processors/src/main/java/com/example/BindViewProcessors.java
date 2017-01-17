@@ -49,10 +49,6 @@ public class BindViewProcessors extends AbstractProcessor {
                 return false;
             }
             VariableElement variableElement = (VariableElement) element;
-            /*方法名*/
-//            String name = variableElement.getSimpleName().toString();
-            /*方法对象类*/
-//            String type = variableElement.asType().toString();
 
             /*获取类信息*/
             TypeElement typeElement = (TypeElement) variableElement.getEnclosingElement();
@@ -75,8 +71,13 @@ public class BindViewProcessors extends AbstractProcessor {
                 variMsg.getVarMap().put(id, variableElement);
             }
 
+
+//            /*参数名*/
+//            String name = variableElement.getSimpleName().toString();
+//            /*参数对象类*/
+//            String type = variableElement.asType().toString();
 //
-//        ClassName InterfaceName = ClassName.bestGuess("com.example.annotation.api.ViewInjector");
+//            ClassName InterfaceName = ClassName.bestGuess("com.example.ViewInjector");
 //            ClassName host = ClassName.bestGuess(qualifiedName);
 //
 //            MethodSpec main = MethodSpec.methodBuilder("inject")
@@ -94,7 +95,7 @@ public class BindViewProcessors extends AbstractProcessor {
 //                            + "}\n")
 //                    .build();
 //
-//            TypeSpec helloWorld = TypeSpec.classBuilder(qName + "$$ViewInjector")
+//            TypeSpec helloWorld = TypeSpec.classBuilder(clsName + "ViewInjector")
 //                    .addModifiers(Modifier.PUBLIC)
 //                    .addMethod(main)
 //                    .addSuperinterface(ParameterizedTypeName.get(InterfaceName, host))
@@ -109,8 +110,10 @@ public class BindViewProcessors extends AbstractProcessor {
 //                javaFile.writeTo(filer);
 //            } catch (IOException e) {
 //                e.printStackTrace();
-//                System.out.println("e--->" + e.getMessage());
 //            }
+
+
+
 
 
         }
