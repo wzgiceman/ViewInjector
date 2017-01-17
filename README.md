@@ -7,7 +7,9 @@ Android 编译时注解用法
 
 ## 更多注解专栏
 
->[注解-编译运行时注解](http://blog.csdn.net/column/details/13413.html)
+>[注解-编译运行时注解](http://blog.csdn.net/column/details/13413)
+
+>[Android 编译时注解-提升](http://blog.csdn.net/wzgiceman/article/details/54580745)
 
 ## QQ交流兴趣群
 
